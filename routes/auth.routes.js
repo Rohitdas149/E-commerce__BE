@@ -12,4 +12,8 @@ module.exports = (app) => {
     [authMW.verifySignUpBody],
     authController.signup
   );
+  /**
+   * Routes for-> POST localhost:8008/ecomm/api/v1/auth/signin
+   */
+  app.post("/ecomm/api/v1/auth/signin", authController.signin);
 };
